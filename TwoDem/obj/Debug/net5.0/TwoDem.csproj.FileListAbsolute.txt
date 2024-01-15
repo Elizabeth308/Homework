@@ -1,0 +1,16 @@
+/home/user/Документы/Lis/3-1HW/TwoDem/bin/Debug/net5.0/TwoDem
+/home/user/Документы/Lis/3-1HW/TwoDem/bin/Debug/net5.0/TwoDem.deps.json
+/home/user/Документы/Lis/3-1HW/TwoDem/bin/Debug/net5.0/TwoDem.runtimeconfig.json
+/home/user/Документы/Lis/3-1HW/TwoDem/bin/Debug/net5.0/TwoDem.runtimeconfig.dev.json
+/home/user/Документы/Lis/3-1HW/TwoDem/bin/Debug/net5.0/TwoDem.dll
+/home/user/Документы/Lis/3-1HW/TwoDem/bin/Debug/net5.0/ref/TwoDem.dll
+/home/user/Документы/Lis/3-1HW/TwoDem/bin/Debug/net5.0/TwoDem.pdb
+/home/user/Документы/Lis/3-1HW/TwoDem/obj/Debug/net5.0/TwoDem.csproj.AssemblyReference.cache
+/home/user/Документы/Lis/3-1HW/TwoDem/obj/Debug/net5.0/TwoDem.GeneratedMSBuildEditorConfig.editorconfig
+/home/user/Документы/Lis/3-1HW/TwoDem/obj/Debug/net5.0/TwoDem.AssemblyInfoInputs.cache
+/home/user/Документы/Lis/3-1HW/TwoDem/obj/Debug/net5.0/TwoDem.AssemblyInfo.cs
+/home/user/Документы/Lis/3-1HW/TwoDem/obj/Debug/net5.0/TwoDem.csproj.CoreCompileInputs.cache
+/home/user/Документы/Lis/3-1HW/TwoDem/obj/Debug/net5.0/TwoDem.dll
+/home/user/Документы/Lis/3-1HW/TwoDem/obj/Debug/net5.0/ref/TwoDem.dll
+/home/user/Документы/Lis/3-1HW/TwoDem/obj/Debug/net5.0/TwoDem.pdb
+/home/user/Документы/Lis/3-1HW/TwoDem/obj/Debug/net5.0/TwoDem.genruntimeconfig.cache

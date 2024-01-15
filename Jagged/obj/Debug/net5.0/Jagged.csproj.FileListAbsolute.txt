@@ -1,0 +1,16 @@
+/home/user/Документы/Lis/3-1HW/Jagged/bin/Debug/net5.0/Jagged
+/home/user/Документы/Lis/3-1HW/Jagged/bin/Debug/net5.0/Jagged.deps.json
+/home/user/Документы/Lis/3-1HW/Jagged/bin/Debug/net5.0/Jagged.runtimeconfig.json
+/home/user/Документы/Lis/3-1HW/Jagged/bin/Debug/net5.0/Jagged.runtimeconfig.dev.json
+/home/user/Документы/Lis/3-1HW/Jagged/bin/Debug/net5.0/Jagged.dll
+/home/user/Документы/Lis/3-1HW/Jagged/bin/Debug/net5.0/ref/Jagged.dll
+/home/user/Документы/Lis/3-1HW/Jagged/bin/Debug/net5.0/Jagged.pdb
+/home/user/Документы/Lis/3-1HW/Jagged/obj/Debug/net5.0/Jagged.csproj.AssemblyReference.cache
+/home/user/Документы/Lis/3-1HW/Jagged/obj/Debug/net5.0/Jagged.GeneratedMSBuildEditorConfig.editorconfig
+/home/user/Документы/Lis/3-1HW/Jagged/obj/Debug/net5.0/Jagged.AssemblyInfoInputs.cache
+/home/user/Документы/Lis/3-1HW/Jagged/obj/Debug/net5.0/Jagged.AssemblyInfo.cs
+/home/user/Документы/Lis/3-1HW/Jagged/obj/Debug/net5.0/Jagged.csproj.CoreCompileInputs.cache
+/home/user/Документы/Lis/3-1HW/Jagged/obj/Debug/net5.0/Jagged.dll
+/home/user/Документы/Lis/3-1HW/Jagged/obj/Debug/net5.0/ref/Jagged.dll
+/home/user/Документы/Lis/3-1HW/Jagged/obj/Debug/net5.0/Jagged.pdb
+/home/user/Документы/Lis/3-1HW/Jagged/obj/Debug/net5.0/Jagged.genruntimeconfig.cache

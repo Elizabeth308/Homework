@@ -1,0 +1,16 @@
+/home/user/Документы/Lis/3-1HW/OneDem/bin/Debug/net5.0/OneDem
+/home/user/Документы/Lis/3-1HW/OneDem/bin/Debug/net5.0/OneDem.deps.json
+/home/user/Документы/Lis/3-1HW/OneDem/bin/Debug/net5.0/OneDem.runtimeconfig.json
+/home/user/Документы/Lis/3-1HW/OneDem/bin/Debug/net5.0/OneDem.runtimeconfig.dev.json
+/home/user/Документы/Lis/3-1HW/OneDem/bin/Debug/net5.0/OneDem.dll
+/home/user/Документы/Lis/3-1HW/OneDem/bin/Debug/net5.0/ref/OneDem.dll
+/home/user/Документы/Lis/3-1HW/OneDem/bin/Debug/net5.0/OneDem.pdb
+/home/user/Документы/Lis/3-1HW/OneDem/obj/Debug/net5.0/OneDem.csproj.AssemblyReference.cache
+/home/user/Документы/Lis/3-1HW/OneDem/obj/Debug/net5.0/OneDem.GeneratedMSBuildEditorConfig.editorconfig
+/home/user/Документы/Lis/3-1HW/OneDem/obj/Debug/net5.0/OneDem.AssemblyInfoInputs.cache
+/home/user/Документы/Lis/3-1HW/OneDem/obj/Debug/net5.0/OneDem.AssemblyInfo.cs
+/home/user/Документы/Lis/3-1HW/OneDem/obj/Debug/net5.0/OneDem.csproj.CoreCompileInputs.cache
+/home/user/Документы/Lis/3-1HW/OneDem/obj/Debug/net5.0/OneDem.dll
+/home/user/Документы/Lis/3-1HW/OneDem/obj/Debug/net5.0/ref/OneDem.dll
+/home/user/Документы/Lis/3-1HW/OneDem/obj/Debug/net5.0/OneDem.pdb
+/home/user/Документы/Lis/3-1HW/OneDem/obj/Debug/net5.0/OneDem.genruntimeconfig.cache
