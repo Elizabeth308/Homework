@@ -50,6 +50,19 @@ class Helper
         }
     }
 
+
+    public void ReCreateArray(int arrayLength, bool userchoise)
+    {
+        if(userchoise == false)
+        {
+            RandomFill(arrayLength);
+        }
+        else
+        {
+            Console.WriteLine("Please enter elements of your array: ");
+            UserFill(arrayLength);   
+        }
+    }
     public void MiddleValue()
     {
        int sum = 0;
@@ -147,6 +160,7 @@ class MainCLass
 {
     static void Main()
     {
+
         Console.WriteLine("Enter the length of your array");
         int arrayLength = int.Parse(Console.ReadLine());
         Console.WriteLine("If you want to fill your array with random numbers, type \"false\", if you want to fill it yourself, type \"true\"");
@@ -162,6 +176,12 @@ class MainCLass
                 case "find middle":
                 {
                     array.MiddleValue();
+                    Console.WriteLine("Enter your command");
+                    break;
+                }
+                case "RA":
+                {
+                    array.ReCreateArray(arrayLength, userchoise);
                     Console.WriteLine("Enter your command");
                     break;
                 }
@@ -186,5 +206,3 @@ class MainCLass
         }
    }
 }
-
-
