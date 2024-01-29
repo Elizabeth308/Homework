@@ -65,7 +65,17 @@ class Helper
         }
     }
 
-
+    public void ReCreateArray(int arrayLength, bool userchoise)
+    {
+        if (userchoise == false)
+        { 
+            RandomFill(arrayLength);
+        }
+        else
+        {
+            UserFill(arrayLength);
+        }
+    }
     public void MiddleValueAllArray()
     {
         int sum = 0;
@@ -142,6 +152,12 @@ class OP
                 case "MVA":
                 {
                     array.MiddleValueAllArray();
+                    Console.WriteLine("Enter your command");
+                    break;
+                }
+                case "RA":
+                {
+                    array.ReCreateArray(arrayLength, userchoise);
                     Console.WriteLine("Enter your command");
                     break;
                 }
