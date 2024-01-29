@@ -15,13 +15,6 @@ class Helper
         }
    }
 
-
-
-
-
-
-
-
    private void RandomFill(int arrayLength)
    {
        Random random = new Random();
@@ -37,13 +30,6 @@ class Helper
        PrintArray();
    }
 
-
-
-
-
-
-
-
     private void UserFill(int arrayLength)
     {
         array = new int[arrayLength, arrayLength];
@@ -56,9 +42,6 @@ class Helper
         }
        PrintArray();
     }
-
-
-
 
     public void PrintArray()
     {
@@ -73,8 +56,18 @@ class Helper
         }
     }
 
-
-
+    public void ReCreateArray(int arrayLength, bool userchoise)
+    {
+        if (userchoise == false)
+        { 
+            RandomFill(arrayLength);
+        }
+        else
+        {
+            Console.WriteLine("Please enter elements of your array: ");
+            UserFill(arrayLength);
+        }
+    }
 
     public void SecondBackwards()
     {
@@ -114,8 +107,6 @@ class Helper
 }
 
 
-
-
 class OP
 {
     static void Main()
@@ -137,6 +128,12 @@ class OP
                     Console.WriteLine("Enter your command");
                     break;
                 }
+                case "RA":
+                {
+                    array.ReCreateArray(arrayLength, userchoise);
+                    Console.WriteLine("Enter your command");
+                    break;
+                }
                 case "MV":
                 {
                     array.MiddleValue();
@@ -152,6 +149,3 @@ class OP
         }
     }
 }
-
-
-
