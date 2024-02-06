@@ -1,0 +1,89 @@
+using System;
+abstract class ArrayBase
+{
+    public abstract void CreateArray();
+
+    public abstract void PrintArray();
+
+    public abstract void MiddleValue();
+}
+
+
+sealed class TwoD:ArrayBase
+{
+    private int[,] array;
+
+    public override void CreateArray()
+    {
+        Console.WriteLine("Enter the length of the array (2 dimensions)");
+        int arrayLength = int.Parse(Console.ReadLine());
+        array = new int[arrayLength, arrayLength];
+        Random random = new Random();
+        for (int i = 0; i < array.GetLength(0); i++)
+        {
+            for(int j = 0; j < array.GetLength(1); j++)
+            {
+                int value = random.Next(0, 1000);
+                array[i,j] = value;
+            }
+        }
+    }
+
+    public override void PrintArray()
+    {
+        Console.WriteLine("Your array: ");
+        for (int i = 0; i < array.GetLength(0); i++)
+        {   
+            for (int j = 0; j < array.GetLength(1); j++)
+            {
+                Console.Write(array[i, j] + "\t");
+            }
+            Console.WriteLine();
+        }
+    }
+
+    public TwoD(int arrayLength, bool random = false)
+    {
+        if (!random)
+        { 
+            Random random = new Random();
+           array = new int[arrayLength, arrayLength];
+           for (int i = 0; i < arrayLength; i++)
+           {
+                for(int j = 0; j < arrayLength; j++)
+                {
+                    int value = random.Next(0, 1000);
+                    array[i,j] = value;
+                }
+           }
+        }
+        else
+        {
+            Console.WriteLine("Please enter elements of your array: ");
+            array = new int[arrayLength, arrayLength];
+            for(int i = 0; i < arrayLength; i++)
+            {
+                for(int j = 0; j < arrayLength; j++)
+                {
+                   array[i, j] = int.Parse(Console.ReadLine());
+                }
+            }
+        }
+    }
+    
+    public override void MiddleValue()
+    {
+        int sum = 0;
+        double MiddleVal = 0.0;
+        int arrayLength = array.Length;
+        for (int i = 0; i < array.GetLength(0); i++)
+        {
+            for(int j = 0; j < array.GetLength(1); j++)
+            {
+                sum += array[i, j];
+            }
+        }
+        MiddleVal = (double) sum/arrayLength;
+        Console.WriteLine("Middle value of 2 dimensional array is " + MiddleVal);
+    }
+}
