@@ -3,24 +3,15 @@ abstract class ArrayBase
 {
     public abstract void CreateArray();
 
-
-
-
     public abstract void PrintArray();
-
-
-
 
     public abstract void MiddleValue();
 }
 
 
-
-
 sealed class OneD:ArrayBase
 {
    private int[] array;
-
 
    public override void CreateArray()
    {
@@ -33,10 +24,27 @@ sealed class OneD:ArrayBase
            array[i] = value;
        }
    }
-
-
-
-
+    public OneD(int arrayLength, bool random = false)
+    {
+        if (!random)
+        { 
+            Random random = new Random();
+            for (int i = 0; i < array.Length; i++)
+            {
+                int value = random.Next(0, 1000);
+                array[i] = value;
+            }
+        }
+        else
+        {
+            Console.WriteLine("Please enter elements of your array: ");
+            array = new int[arrayLength];
+           for(int i = 0; i < arrayLength; i++)
+           {
+               array[i] = int.Parse(Console.ReadLine());
+           }
+        }
+    }
     public override void PrintArray()
     {
         Console.WriteLine("Your array: ");
@@ -45,9 +53,6 @@ sealed class OneD:ArrayBase
             Console.WriteLine(item);
         }
     }
-
-
-
 
     public override void MiddleValue()
     {
@@ -64,16 +69,9 @@ sealed class OneD:ArrayBase
 }
 
 
-
-
-
-
-
-
 sealed class TwoD:ArrayBase
 {
     private int[,] array;
-
 
     public override void CreateArray()
     {
@@ -91,9 +89,6 @@ sealed class TwoD:ArrayBase
         }
     }
 
-
-
-
     public override void PrintArray()
     {
         Console.WriteLine("Your array: ");
@@ -107,11 +102,35 @@ sealed class TwoD:ArrayBase
         }
     }
 
-
-
-
-
-
+    public TwoD(int arrayLength, bool random = false)
+    {
+        if (!random)
+        { 
+            Random random = new Random();
+           array = new int[arrayLength, arrayLength];
+           for (int i = 0; i < arrayLength; i++)
+           {
+                for(int j = 0; j < arrayLength; j++)
+                {
+                    int value = random.Next(0, 1000);
+                    array[i,j] = value;
+                }
+           }
+        }
+        else
+        {
+            Console.WriteLine("Please enter elements of your array: ");
+            array = new int[arrayLength, arrayLength];
+            for(int i = 0; i < arrayLength; i++)
+            {
+                for(int j = 0; j < arrayLength; j++)
+                {
+                   array[i, j] = int.Parse(Console.ReadLine());
+                }
+            }
+        }
+    }
+    
     public override void MiddleValue()
     {
         int sum = 0;
@@ -128,12 +147,6 @@ sealed class TwoD:ArrayBase
         Console.WriteLine("Middle value of 2 dimensional array is " + MiddleVal);
     }
 }
-
-
-
-
-
-
 
 
 sealed class IDKD:ArrayBase
@@ -158,9 +171,6 @@ sealed class IDKD:ArrayBase
         }
     }
 
-
-
-
     public override void PrintArray()
     {
         Console.WriteLine("Your array: ");
@@ -174,9 +184,40 @@ sealed class IDKD:ArrayBase
         }
     }
 
-
-
-
+     public IDKD(int arrayLength, bool random = false)
+    {
+        if (!random)
+        { 
+            Random random = new Random();
+           array = new int[arrayLength][];
+           for (int i = 0; i < arrayLength; i++)
+           {
+                Console.WriteLine("Enter the length of the array: ");
+                int k  = int.Parse(Console.ReadLine());
+                array[i] = new int[k];
+                for(int j = 0; j < k; j++)
+                {
+                    int value = random.Next(0, 1000);
+                    array[i][j] = value;
+                }
+            }
+        }
+        else
+        {
+             array = new int[arrayLength][];
+            for(int i = 0; i < arrayLength; i++)
+            {
+                Console.WriteLine("Enter the length of the array: ");
+                int k = int.Parse(Console.ReadLine());
+                array[i] = new int[k];
+                for(int j = 0; j < k; j++)
+                {
+                    Console.WriteLine("Please enter element of your array: ");
+                   array[i][j] = int.Parse(Console.ReadLine());
+                }
+            }
+         }
+       }
     public override void MiddleValue()
     {
         int sum = 0;
@@ -210,6 +251,17 @@ class Program
             i.CreateArray();
             i.PrintArray();
             i.MiddleValue();
+        }
+        Console.WriteLine("Enter the length of your array");
+        int arrayLength = int.Parse(Console.ReadLine());
+        Console.WriteLine("If you want to fill your array with random numbers, type \"false\", if you want to fill it yourself, type \"true\"");
+        bool userchoise = bool.Parse(Console.ReadLine());
+        array[0].OneD(arrayLength, userchoise);
+        array[1].TwoD(arrayLength, userchoise);
+        array[2].IDKD(arrayLength, userchoise);
+        foreach(var t in array)
+        {
+            i.PrintArray();
         }
    }
 }
