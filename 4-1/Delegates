@@ -1,0 +1,45 @@
+using System;
+class AllDelegates
+{
+    public void CreateGiven():this(7)
+
+    delegate void AddElement();
+
+    delegate void RemoveElement();
+
+    delegate void Sort();
+
+    delegate void CountAllElements();
+
+    delegate void CountSuitable();
+
+    delegate void CheckAtLeastOneElement();
+
+    delegate void CheckAllElements();
+
+    delegate void CheckIfInArray();
+
+    delegate void GetFirstSuitableElement();
+
+    delegate void UseToAllElements();
+
+    delegate void GetAllSuitable();
+
+    delegate void GetChosenType();
+
+    delegate void ReverseArray();
+
+    delegate void GetMin();
+
+    delegate void GetMax();
+
+    delegate void GetMinProjection();
+
+    delegate void GetMaxProjection();
+
+    delegate void ToProjection();
+
+    delegate void GetElementtsFromGivenIndex();
+
+    delegate void Iterate();
+}
